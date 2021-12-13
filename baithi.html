@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo coffe</title>
+    <script src="../js/baithi.js"></script>
+</head>
+<body>
+<table style="border: 1px black solid" id="one">
+    <tr>
+        <th>mã đồ uống</th>
+        <th>tên đồ uống</th>
+        <th>size</th>
+        <th>giá bán</th>
+    </tr>
+
+    <script language="javascript">
+        var stringTable ="";
+        for( let i=0; i<=menu.length -1 ;i++){
+            stringTable += "<tr>\n" +
+                "                <th>"+menu[i].id+"</th>\n" +
+                "                <th>"+menu[i].name+"</th>\n" +
+                "                <th>"+menu[i].size+"</th>\n" +
+                "                <th>"+menu[i].price+"</th>\n" +
+                "            </tr>"
+
+        }
+        document.getElementById("one").innerHTML= stringTable;
+    </script>
+</table>
+<h4>mời bạn chọn đồ uống</h4>
+<input type="number" id="loaidouong">
+<h4>mời bạn nhập số lượng</h4>
+<input type="number" id="soluong">
+<h4>tổng tiền của quý khác là</h4>
+<input type="number" id="tongtien">
+
+</body>
+</html>
